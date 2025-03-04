@@ -1,10 +1,12 @@
 function getAllButLastElementOfProperty(obj, key) {
-    // your code here
-    
+  // your code here
+  if (!obj[key] || !Array.isArray(obj[key])) return [];
+
+  return obj[key].slice(0, -1);
 }
 
 let obj = {
-  key: [1, 2, 3]
+  key: [1, 2, 3],
 };
-let output = getAllButLastElementOfProperty(obj, 'key');
+let output = getAllButLastElementOfProperty(obj, "key");
 console.log(output); // --> [1, 2]
