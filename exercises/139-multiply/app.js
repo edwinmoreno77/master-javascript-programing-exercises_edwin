@@ -17,11 +17,9 @@ function multiply(num1, num2) {
     result += num1;
   }
 
-  // If the result should be negative, negate it
   if (isNegative) {
     result = -result;
   }
-
   return result;
 }
 
