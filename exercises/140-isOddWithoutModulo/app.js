@@ -1,6 +1,6 @@
 function isOddWithoutModulo(num) {
-    // your code here
-    
+  // your code here
+  return Math.floor(num / 2) !== num / 2;
 }
 
 let output = isOddWithoutModulo(17);
