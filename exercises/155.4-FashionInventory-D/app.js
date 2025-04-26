@@ -18,7 +18,7 @@ let currentInventory = [
 ];
 
 function getLaceNameDataForShoes(inventory) {
-  // your code here
+  
   let aux = [];
   inventory.map((e) => {
     e.shoes.map((x) => {
