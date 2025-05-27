@@ -21,13 +21,14 @@ function renderInventory(inventory) {
   // your code here
   // hint: before you just dive into coding...
   // it's a good idea to sketch out a skeleton like you've been seeing earlier in this module...
-  let aux = [];
-  inventory.map((e) => {
-    e.shoes.map((x) => {
-      aux.push([e.name, x.name, x.price]);
+  const result = [];
+  inventory.forEach((brand) => {
+    brand.shoes.forEach((shoe) => {
+      result.push([brand.name, shoe.name, shoe.price]);
     });
   });
-  return aux;
+
+  return result;
 }
 
 console.log(renderInventory(currentInventory));
